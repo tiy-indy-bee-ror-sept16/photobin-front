@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhotoBin</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/stylesheet" href="css/global.css" />
+</head>
+<body>
+  <div id="alerts"></div>
+  <div id="user_info"></div>
+  <!-- Content goes here. -->
+  <a href="#" class="click_me">Howdy ya'll</a>
+  <a href="#" class="click_me">Howdy yinz</a>
+  <a href="#" class="click_me">Howdy you all</a>
+  <a href="#" class="click_me">Howdy fellow humans</a>
+  <a href="#" class="click_me">Howdy folks</a>
+  <!-- Scripts go here. -->
+
+  <div id="signup_form" style="display: none;">
+    <h1>Sign up</h1>
+    <form id="formie" action="http://google.com" method="GET">
+      <input type="email" name="email" placeholder="Your email"/>
+      <input type="password" name="password" placeholder="Your password"/>
+      <input type="submit" name="submit" value="Go!" class="btn btn-primary" />
+    </form>
+  </div>
+
+  <div id="login_form" style="display: none;">
+    <h1>Log In</h1>
+    <form id="login">
+      <input type="email" name="email" placeholder="Your email"/>
+      <input type="password" name="password" placeholder="Your password"/>
+      <input type="submit" name="submit" value="Go!" class="btn btn-primary" />
+    </form>
+  </div>
+
+  <div id="photo_form" style="display: none;">
+    <h1>Upload a photo!</h1>
+    <form id="upload">
+      <input type="file" name="photo" />
+      <textarea name="caption"></textarea>
+      <input type="submit" name="submit" value="Go!" class="btn btn-primary" />
+    </form>
+  </div>
+
+  <div id="photos">
+
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="photo_holder">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
